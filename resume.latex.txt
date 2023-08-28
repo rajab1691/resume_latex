@@ -1,0 +1,186 @@
+﻿\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{xcolor}
+% Change the geometry
+\geometry{left=1cm, top=.8cm, right=1cm, bottom=1.4cm, footskip=.5cm}
+
+% Defining your colors
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-purple}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+\lastupdated
+
+% Title name
+\namesection{}{Raja Babu}{
+\phone{+91-8757608295} \email{\href{mailto:rajjha1691@gmail.com}{rajjha1691@gmail.com}}}
+
+% Column one
+\begin{minipage}[t]{0.33\textwidth} 
+
+% Education
+\cvsection{Education} 
+
+\subsection{Sinhgad College of Engg}
+\descript{BE in Electronics \& Telecommunications}
+\cvevent{Aug 2022}{Pune, India} 
+Graduated with First class Distinction
+\sectionsep
+
+\subsection{Saryug College}
+\descript{Intermediate/+2 + Science, Maths}
+\cvevent{Sep 2018}{Samastipur, India} 
+Graduated with First Class Division
+\sectionsep
+
+% Links
+\cvsection{Links}
+
+\leetcode{LeetCode} \href{https://leetcode.com/rajab1691/}{\bf rajab1691} \\
+\github{GitHub} \href{https://github.com/rajab1691}{\bf rajab1691} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/raj-jha-98339816a/}{\bf rajjha1691}
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Programming}
+C++/C \textbullet{}  Python  \textbullet{} Java   \textbullet{}
+JavaScript \textbullet{} TypeScript
+\sectionsep
+\subsection{Miscellaneous}
+HTML \textbullet{} CSS \textbullet{} Bootstrap \textbullet{} Django\textbullet{} NodeJS \textbullet{} Machine Learning \textbullet{} PostgreSQL \textbullet{} MySQL \textbullet{} Angular \textbullet{} Pandas \textbullet{} GIT
+\sectionsep
+
+% Coursework
+\cvsection{Coursework}
+
+Data structures and Algorithms \\
+Programming for Data Science \\
+Natural language processing \\
+Object Oriented Programming \\
+Python Programming \\
+Web Development \\
+DBMS\\
+Competitive Programming \\
+Introduction to Statistics \\
+
+\sectionsep
+
+
+% Honors
+\cvsection{Achievements} 
+
+\subsection{Top performer on coding platform}
+ Ranked within the top 35k positions on the LeetCode platform, a popular coding platform used by developers worldwide for practicing and improving their coding skills. 
+\sectionsep
+\subsection{Mentorship Experience}
+ Mentored juniors in college in coding by providing guidance and support in programming concepts, best practices, and project development.
+\sectionsep
+
+
+
+% Column two
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+% Experience
+\cvsection{Experience}
+
+\runsubsection{Developer} \\
+\descript{Digitate - TCS Venture}
+\cvevent{July 2022 – Present}{Pune, India} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Engineered and deployed a dynamic recommender system, fueling a 38\% surge in user engagement and cutting content discovery time by 67\%.
+\item Aided in creating a knowledge-sharing tool with OpenAI API for internal teams, resulting in a 40\% faster question resolution. Developed recommendation algorithms for smoother conversations and led UI and backend integration, optimizing information exchange.
+\item Improved workload management prediction accuracy for the Ignio platform through the development of algorithms
+that analyzed time series data and patterns
+\item Skills - \textcolor{VividPurple}{Python}, \textcolor{VividPurple}{Numpy}, \textcolor{VividPurple}{Pandas}, \textcolor{VividPurple}{Django}, \textcolor{VividPurple}{Scikit-learn}, \textcolor{VividPurple}{OpenAI}, \textcolor{VividPurple}{Machine Learning}, \textcolor{VividPurple}{Angular}, \textcolor{VividPurple}{HighCharts}, \textcolor{VividPurple}{Timeseries analysis}
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Developer Intern} \\
+\descript{Apisero}
+\cvevent{Sep 2021 – Dec 2021}{Remote} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed REST APIs using MuleSoft Anypoint API Platform
+\item Skills - Java, RESTful web services, JSON, XML, Git, Agile methodology
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Frontend Intern} \\
+\descript{PrepKart}
+\cvevent{Jan 2021 – Jun 2021}{Remote} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Implemented websites, landing pages, and applications from concept through deployment, with a responsive,
+mobile-first approach
+\item Work closely with other team members on the development team.
+\item Skills - HTML, CSS, JavaScript, Django
+\end{tightemize}
+\sectionsep
+
+
+% Recent Projects
+\cvsection{Recent Projects}
+
+\runsubsection{HUDDLEHUB} \\
+\descript{Group Video Chat App}
+\begin{tightemize}
+\item Realtime chat functionality
+\item Creating Group Video Call Rooms
+\item Login / Registration (Authentication with JWT Token)
+\item Friends Invitation System
+\item TechStack : MongoDB, Express, React, Node with WebRTC and SocketIO
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FitTrack} \\
+\descript{Track workouts with map routes}
+\begin{tightemize}
+\item an interactive map that allows users to track their workouts
+\item User can also view their exercise routes
+\item Login / Registration (Authentication with JWT Token)
+\item Friends Invitation System
+\item TechStack : HTML, CSS, JS, Leaflet.js
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CookBook} \\
+\descript{Recipe book}
+\begin{tightemize}
+\item user can search for recipe and get step-by-step instructions on how to make them
+\item Users can also save their favorite recipes
+\item Users can also add any recipes
+\item TechStack : HTML, CSS, JS
+\end{tightemize}
+\sectionsep
+\end{minipage} 
+\end{document}  
